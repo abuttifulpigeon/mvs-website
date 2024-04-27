@@ -1,0 +1,205 @@
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (phones) */
+    .header {
+        flex-direction: column;
+        height: auto;
+        align-items: center; /* Center align header content */
+      }
+    
+      .header img {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px;
+      }
+    
+      .header-buttons {
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px;
+        justify-content: center; /* Center align buttons */
+      }    
+
+    .header-buttons div {
+        font-size: 50%; /* Shrink the buttons by 20% */
+        padding: 2px; /* Adjust padding for smaller buttons */
+    }
+  
+    .latest-video {
+      flex-direction: column;
+    }
+  
+    .latest-video iframe {
+      margin: 10px 0;
+    }
+  
+    .container {
+      margin: 1rem;
+    }
+
+    iframe {
+        height: 100%;
+        width: calc(100% - 1rem);
+    }
+}
+
+@font-face {
+    font-family: "rock";
+    src: url(/assets/fonts/RocknRollOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "arial";
+    src: url(/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+body {
+    font-family: "rock";
+}
+:root {
+    --bgColor: #000000;
+    
+
+    margin: 0px;
+    color: rgb(0, 0, 0) !important;
+    font-family: "montserrat";
+}
+
+body {
+    background-color: var(--bgColor);
+    margin: 0px;
+}
+
+p, h1, h2, h3 {
+    color: #000;
+    
+}
+
+a {
+    color: black;
+}
+
+.header {
+    display: flex;
+    background-color: #000000;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    margin-left: 50px;
+    width: auto;
+    height: 30px;
+}
+
+.header-buttons {
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-buttons div {
+    margin-left: 20px;
+    padding: 10px;
+    
+    color: white;
+    font-family: "rock";
+    transition: 250ms;
+    text-decoration: none;
+}
+
+.header-buttons .join {
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.header-buttons .join:hover {
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+
+.header-buttons div:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+.header-buttons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    margin: 2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.latest-video {
+    
+
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+}
+
+.latest-video iframe {
+    margin: 10px;
+    flex-basis: 50%;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+.video-info p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.video-info a {
+  text-decoration: none;
+}
+
+.description p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+}
+
+.video-container {
+    margin: 2rem;
+    background-color: rgb(255, 255, 255);
+    height: 512px;
+
+    border: 5px solid black;
+}
+
+.mavica-news {
+    padding-left: 1rem;
+}
+
+.notice {
+    margin: 2rem;
+    background-color: #52551a;
+    border: 2px solid #f2d600;
+    border-radius: 5px;
+    padding: 1rem;
+    color: white;
+}
+
+.subtext * {
+    color: grey;
+    font-size: small;
+    padding-left: 10px;
+}
